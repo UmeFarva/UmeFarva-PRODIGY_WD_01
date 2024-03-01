@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: hsl(0, 0%, 4%);
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image1a.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    
+    width: 500px;
+}
+nav img{
+    height: 100px;
+    width: 160px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline; 
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Add smooth transition for text color change */
+  }
+  
+  nav ul li a:hover {
+    color: #fbb130; /* Change text color on hover */
+  }
+
+
+
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+.headertext{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.headertext h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.headertext h1 span{
+    color: #ff004f;
+}
+.p1{
+    font-size: 20px;
+    font-weight: 6;
+    color: #fff;
+}
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+  
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width:100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+#services{
+    padding: 30px 0;
+}
+.services-List{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-List div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 10px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-List div i{
+    font-size: 50px;
+    margin-bottom:  10 px;
+}
+.services-List div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+services-List div p{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;color: #fff;
+
+}
+.services-List div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-List div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+
+
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+
+
+
+.background {
+    background-color: #060606; /* Light gray background color */
+    padding: 50px 0; /* Add some padding for spacing */
+  }
+  
+  .famous {
+    background-color: #060606; /* Light gray background color */
+    padding: 50px 0; /* Add some padding for spacing */
+  }
+  footer {
+    background-color: #100f0f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  header {
+    background-color: #070707;
+    color: #fff;
+    padding: 20px;
+    
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
